@@ -60,6 +60,9 @@
     .mobile-display {
         display: none;
 }
+.active {
+    display: inline-block
+}
 /* Nav bar */
     .bg-light {
         background-color: rgba(0,0,0,0.7);
