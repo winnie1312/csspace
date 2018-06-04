@@ -1,26 +1,8 @@
 $(document).ready(function () {
-    $(".navbar").toggleClass("bg-dark");    	
-		//navbar scrolling
-		$(window).on("scroll", function() {
-			if($(window).scrollTop() > 10) {
-					$(".navbar").addClass("navbar-scrolled");
-					$(".nav-link").addClass("nav-link-scrolled");
-			} else {
-					//remove the background property so it comes transparent again (defined in your css)
-				 $(".navbar").removeClass("navbar-scrolled");
-				 $(".nav-link").removeClass("nav-link-scrolled");
-			}
-		});
-		//add book a tour button when scrolling
-		$(window).on("scroll", function() {
-			if($(window).scrollTop()>800) {
-				$().addClass
-			}	else {
-
-			}
-		});
-
-
+    $(".navbar").toggleClass("bg-dark");    
+    $(document).scroll(function () {
+        $(".navbar").toggleClass("bg-dark", $(this).scrollTop() > $(".navbar").height());
+    });
     $(".active").toggleClass("active");
     $(".active").onclick = $(".active").toggleClass("active");
 });
@@ -32,6 +14,7 @@ var $allVideos = $("iframe[src^='//www.youtube.com']"),
 
 // Figure out and save aspect ratio for each video
 $allVideos.each(function() {
+
   $(this)
     .data('aspectRatio', this.height / this.width)
 
