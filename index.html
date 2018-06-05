@@ -1,272 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="icon" href="assets/favicon.svg" width="16px" height="16px">
-		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <title>CoderSchool Space</title>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top box-shadow">
-        <div class="container">
-            <a class="navbar-brand" href="http://www.coderschool.vn/">
-                <picture>
-                    <source media="(min-width: 768px)" srcset="https://svgshare.com/i/6RK.svg">
-                    <source media="(max-width: 767px)" srcset="https://svgshare.com/i/6P9.svg">
-                    <img src="https://svgshare.com/i/6P9.svg" alt="CS-responsive" width="180px;">
-                </picture>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-									<li class="nav-item ml-3 pt-1"><a class="nav-link text-uppercase" href="#community">Community</a></li>	
-									<li class="nav-item ml-3 pt-1"><a class="nav-link text-uppercase" href="#space-section">Our Space</a></li>
-                  <li class="nav-item ml-3 pt-1"><a class="nav-link text-uppercase" href="#location">Location</a></li>
-                    <!-- <li class="nav-item ml-3 pt-1"><a class="nav-link text-uppercase " href="#">Book a Tour</a></li> -->
-                </ul>
-            </div>
-        </div>
-</nav>
-<div class="jumbotron main-banner">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="icon" href="assets/favicon.svg" width="16px" height="16px">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>CoderSchool Space</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top box-shadow">
+    <div class="container">
+      <a class="navbar-brand" href="http://www.coderschool.vn/">
+        <picture>
+          <source media="(min-width: 768px)" srcset="https://svgshare.com/i/6RK.svg">
+          <source media="(max-width: 767px)" srcset="https://svgshare.com/i/6P9.svg">
+          <img src="https://svgshare.com/i/6P9.svg" alt="CS-responsive" width="180px;">
+        </picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#community">Community</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#space-section">Our Space</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase" href="#location">Location</a>
+          </li>
+          <!-- <li class="nav-item ml-3 pt-1"><a class="nav-link text-uppercase " href="#">Book a Tour</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="main-banner">
     <div class="video-container">
-        <iframe class="desktop-display" width="100%" height="960" src="https://www.youtube.com/embed/NiPq-NBeOD0?playlist=NiPq-NBeOD0;autoplay=1;loop=1;rel=0&amp;controls=0&amp;showinfo=0;mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <img src="assets/classroom.jpg" width="100%" height="auto" class="mobile-display">
+      <div class="layer-cover"></div>
+      <iframe class="desktop-display" width="100%" src="https://www.youtube.com/embed/NiPq-NBeOD0?playlist=NiPq-NBeOD0;autoplay=1;loop=1;rel=0&amp;controls=0&amp;showinfo=0;mute=1"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+      <img src="assets/classroom.jpg" width="100%" height="auto" class="mobile-display">
     </div>
     <div class="overlay">
-        <h1>Meet your new home</h1>
-        <button>Book a tour</button>
+      <h1>Meet your new home</h1>
+      <button>Book a tour</button>
     </div>
-</div>
-<!-- COMMUNITY SECTION -->
-<div id="community">
-	<div class="container">
-			 <div class="row">
-					 <div class="col-md-12">
-					 <h2 class="text-center pink header-title">OUR COMMUNITY</h2>
-					 <img src="assets/eventspace.jpg" width="100%">    
-					 </div>
-					 <div class="col-md-6">
-					 <img src="assets/eventspace.jpg" width="100%">
-							 <div class="community-content-wrapper">
-							 <h3>Classes</h3>
-							 <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
-							 </div>    
-					 </div>
-					 <div class="col-md-6">
-					 <img src="assets/eventspace.jpg" width="100%">     
-							 <div class="community-content-wrapper">
-							 <h3>Cafe & Coworking Space</h3>
-							 <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>    
-							 </div>    
-					 </div>
-					 <div class="col-md-6">
-					 <img src="assets/eventspace.jpg" width="100%">     
-							 <div class="community-content-wrapper">
-									 <h3>Partnerships</h3>
-									 <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
-							 </div>
-					 </div>
-					 <div class="col-md-6">
-					 <img src="assets/eventspace.jpg" width="100%">
-							 <div class="community-content-wrapper">
-							 <h3>Event Space</h3>
-							 <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
-							 </div>    
-					 </div>
-			 </div>
-	 </div> 
-</div>
-<!-- OUR SPACE SECTION -->
-<div class="container">
-    <h1 class="text-center pink header-title">DISCOVER OUR CAMPUS</h1>  
+  </div>
+  <!-- COMMUNITY SECTION -->
+    <div id="community" class="main-area container">
       <div class="row">
-				<div class="col-md-4 col-12">   
-					<div class="card">
-						<div class="card-body">
-							<img src="assets/building.svg" width="100px" height="auto">  
-							<h5 class="card-title">Our Space</h5>
-								<p class="card-text">Whether you want to rent an office, or host an event, etc. We cover all of your needs.</p>
-								<a href="#space-section" class="btn btn-primary">See our prices</a>
-						</div>
-					</div>
-				</div>  
-        <div class="col-md-4 col-12">   
-        	<div class="card">
-            <div class="card-body">
-            	<img src="assets/community.svg" width="100px" height="auto">  
-            	<h5 class="card-title">Community</h5>
-                <p class="card-text">We develop a really close relationship with tech industry and tech talents here in Vietnam. Join our mailing list for further updates on classes, events, etc.</p>
-                <a href="#community" class="btn btn-primary">Join our community</a>
-            </div>
-					</div> 
+        <div class="col-md-12">
+          <h2 class="text-center header-style">OUR COMMUNITY</h2>
+          <div class="header-line mx-auto"></div>
+          <img src="assets/eventspace.jpg" width="100%">
         </div>
-        <div class="col-md-4 col-12">    
-					<div class="card">
-            <div class="card-body">
-            	<img src="assets/location.svg" width="100px" height="auto">      
-            	<h5 class="card-title">Location</h5>
-                <p class="card-text">Located in the heart of D4, just 5 mins away from D1. It's surrounded by local restaurants that are waiting for you to explore</p>
-                <a href="#location" class="btn btn-primary">Find us on Google Maps</a>
-            </div>
-        	</div>
+        <div class="col-md-6">
+          <img src="assets/eventspace.jpg" width="100%">
+          <div class="community-content-wrapper">
+            <h5>Classes</h5>
+            <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam
+              lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
+          </div>
         </div>
-        </div>    
-</div>
-<div>
-    <div class="gray-bg">
-    <div class="container" id="space-section">
-        <div class="row">
+        <div class="col-md-6">
+          <img src="assets/eventspace.jpg" width="100%">
+          <div class="community-content-wrapper">
+            <h5>Cafe & Coworking Space</h5>
+            <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam
+              lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/eventspace.jpg" width="100%">
+          <div class="community-content-wrapper">
+            <h5>Partnerships</h5>
+            <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam
+              lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/eventspace.jpg" width="100%">
+          <div class="community-content-wrapper">
+            <h5>Event Space</h5>
+            <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam
+              lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- OUR SPACE SECTION -->
+    <div id="space" class=" main-area container">
+      <h2 class="text-center header-style">DISCOVER OUR CAMPUS</h2>
+      <div class="header-line mx-auto"></div>
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/building.svg" width="100px" height="auto">
+              <h5 class="card-title">Our Space</h5>
+              <p class="card-text">Whether you want to rent an office, or host an event, etc. We cover all of your needs.</p>
+              <a href="#space-section" class="btn btn-primary px-4 mx-auto">See more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/community.svg" width="100px" height="auto">
+              <h5 class="card-title">Community</h5>
+              <p class="card-text">We develop a really close relationship with tech industry and tech talents here in Vietnam. Join our mailing
+                list for further updates on classes, events, etc.</p>
+              <a href="#community" class="btn btn-primary px-4 mx-auto">Join us</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12">
+          <div class="card">
+            <div class="card-body">
+              <img src="assets/location.svg" width="100px" height="auto">
+              <h5 class="card-title">Location</h5>
+              <p class="card-text">Located in the heart of D4, just 5 mins away from D1. It's surrounded by local restaurants that are waiting for
+                you to explore</p>
+              <a href="#location" class="btn btn-primary px-4 mx-auto">Find us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- room cards -->
+    <div>
+      <div class="gray-bg">
+        <div class="container" id="space-section">
+          <!-- event-hall -->
+          <div class="row">
             <div class="col-md-7">
-                <img src="assets/eventspace.jpg" width="100%">
+              <img src="assets/eventspace.jpg" width="100%">
             </div>
             <div class="col-md-5 space-info-right">
-                <h2 class="bot-left">EVENT HALL</h2>
-                <p>Capacity: 50-100 people</p>
-                <p>Price: From 2.000.000/hour</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#event-space-price" role="button" aria-expanded="false" aria-controls="collapseExample">See more</a>
+              <h2 class="bot-left">EVENT HALL</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+              <a class="btn btn-primary price-details" data-toggle="collapse" href="#event-space-price" role="button" aria-expanded="false"
+                aria-controls="collapseExample">See more</a>
             </div>
-        </div>
-        <div class="row collapse" id="event-space-price">
-					<div class="col-md-4">
-						<h2>GOOD START - 1 MONTH</h2>
-						<p>Capacity: 50-100 people</p>
-						<p>Price: From 2.000.000/hour</p>
-					</div>
-					<div class="col-md-4">
-						<h2>GOOD START - 1 MONTH</h2>
-						<p>Capacity: 50-100 people</p>
-						<p>Price: From 2.000.000/hour</p>
-					</div>
-					<div class="col-md-4">
-						<h2>GOOD START - 1 MONTH</h2>
-						<p>Capacity: 50-100 people</p>
-						<p>Price: From 2.000.000/hour</p>
-					</div>
-        </div>    
-        <div class="row">            
-            <div class="col-md-7 order-md-2"><img src="assets/classroom.jpg" width="100%"></div>
-             <div class="col-md-5 order-md-1 space-info-left">    
-                <h2 class="bot-left">CLASSROOM</h2>
+          </div>
+          <div class="row collapse" id="event-space-price">
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+          </div>
+          <!-- classroom -->
+          <div class="row">
+            <div class="col-md-7 order-md-2">
+              <img src="assets/classroom.jpg" width="100%">
+            </div>
+            <div class="col-md-5 order-md-1 space-info-left">
+              <h2 class="bot-left">CLASSROOM</h2>
+              <p>Capacity: 10-30 people</p>
+              <p>Price: From 300.000VND/hour</p>
+              <a class="btn btn-primary price-details" data-toggle="collapse" href="#classroom-price" role="button" aria-expanded="false"
+                aria-controls="collapseExample">See more</a>
+            </div>
+          </div>
+          <div class="row collapse" id="classroom-price">
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+          </div>
+          <!-- office room -->
+          <div class="row">
+            <div class="col-md-7">
+              <img src="assets/office.jpg" width="100%">
+            </div>
+            <div class="col-md-5 space-info-right">
+              <h2 class="bot-left">OFFICE ROOMS</h2>
+              <p>Capacity: 4-12 people</p>
+              <p>Price: From 12.000.000/month</p>
+              <a class="btn btn-primary price-details" data-toggle="collapse" href="#office-price" role="button" aria-expanded="false"
+                aria-controls="collapseExample">See more</a>
+            </div>
+          </div>
+          <div class="row collapse" id="office-price">
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+          </div>
+          <!-- meeting room -->
+          <div class="row">
+              <div class="col-md-7 order-md-2">
+                <img src="assets/classroom.jpg" width="100%">
+              </div>
+              <div class="col-md-5 order-md-1 space-info-left">
+                <h2 class="bot-left">METTING ROOM</h2>
                 <p>Capacity: 10-30 people</p>
                 <p>Price: From 300.000VND/hour</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#classroom-price" role="button" aria-expanded="false" aria-controls="collapseExample">See more</a>
+                <a class="btn btn-primary price-details" data-toggle="collapse" href="#meetingroom-price" role="button" aria-expanded="false"
+                  aria-controls="collapseExample">See more</a>
+              </div>
             </div>
-        </div>
-          <div class="row collapse" id="classroom-price">
-                        <div class="col-md-4">
-                            <h2>GOOD START - 1 MONTH</h2>
-                            <p>Capacity: 50-100 people</p>
-                            <p>Price: From 2.000.000/hour</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>GOOD START - 1 MONTH</h2>
-                            <p>Capacity: 50-100 people</p>
-                            <p>Price: From 2.000.000/hour</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>GOOD START - 1 MONTH</h2>
-                            <p>Capacity: 50-100 people</p>
-                            <p>Price: From 2.000.000/hour</p>
-                        </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7"><img src="assets/office.jpg" width="100%"></div>
-            <div class="col-md-5 space-info-right">
-                <h2 class="bot-left">OFFICE ROOMS</h2>
-                <p>Capacity: 4-12 people</p>
-                <p>Price: From 12.000.000/month</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#office-price" role="button" aria-expanded="false" aria-controls="collapseExample">See more</a>
+            <div class="row collapse" id="meetingroom-price">
+              <div class="col-md-4">
+                <h2>GOOD START - 1 MONTH</h2>
+                <p>Capacity: 50-100 people</p>
+                <p>Price: From 2.000.000/hour</p>
+              </div>
+              <div class="col-md-4">
+                <h2>GOOD START - 1 MONTH</h2>
+                <p>Capacity: 50-100 people</p>
+                <p>Price: From 2.000.000/hour</p>
+              </div>
+              <div class="col-md-4">
+                <h2>GOOD START - 1 MONTH</h2>
+                <p>Capacity: 50-100 people</p>
+                <p>Price: From 2.000.000/hour</p>
+              </div>
             </div>
+            <!-- end of room cards -->
         </div>
-        <div class="row collapse" id="office-price">
-                        <div class="col-md-4">
-                            <h2>GOOD START - 1 MONTH</h2>
-                            <p>Capacity: 50-100 people</p>
-                            <p>Price: From 2.000.000/hour</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>GOOD START - 1 MONTH</h2>
-                            <p>Capacity: 50-100 people</p>
-                            <p>Price: From 2.000.000/hour</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h2>GOOD START - 1 MONTH</h2>
-                            <p>Capacity: 50-100 people</p>
-                            <p>Price: From 2.000.000/hour</p>
-                        </div>
-        </div>
+      </div>
     </div>
-</div>
-</div>
-
-
-<div class="gray-bg">   
-<div class="container" id="location">
-    <h2 class="text-center pink header-title">OUR LOCATION</h2>
+  <!-- OUR LOCATION SECTION -->
+  <div class="main-area container" id="location">
+    <h2 class="text-center header-style">OUR LOCATION</h2>
+    <div class="header-line mx-auto"></div>
     <div class="row">
-    <div class="col-md-6">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.637329812277!2d106.70538841480064!3d10.76240879233108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f693a5128df%3A0x76966b260234240b!2zQ29wYWMgU3F1YXJlLCAxMiBUw7RuIMSQ4bqjbiwgcGjGsOG7nW5nIDEzLCBRdeG6rW4gNCwgSOG7kyBDaMOtIE1pbmggNzAwMDAw!5e0!3m2!1sen!2s!4v1527006415421" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>    
-     <div class="col-md-6" id="info">
-        <h3>ADDRESS</h3>   
-        <p class="left-border">Ground Floor, Copac Square Building<br>12 Ton Dan, District 4, Ho Chi Minh City</p>
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.637329812277!2d106.70538841480064!3d10.76240879233108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f693a5128df%3A0x76966b260234240b!2zQ29wYWMgU3F1YXJlLCAxMiBUw7RuIMSQ4bqjbiwgcGjGsOG7nW5nIDEzLCBRdeG6rW4gNCwgSOG7kyBDaMOtIE1pbmggNzAwMDAw!5e0!3m2!1sen!2s!4v1527006415421"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6" id="info">
+        <h3>ADDRESS</h3>
+        <p class="left-border">Ground Floor, Copac Square Building
+          <br>12 Ton Dan, District 4, Ho Chi Minh City</p>
         <h3>PHONE NUMBER</h3>
         <p>84 000 000 000</p>
         <h3>EMAIL</h3>
-        <p>cuong@coderschool.vn</p>   
+        <p>cuong@coderschool.vn</p>
+      </div>
     </div>
-    </div>    
-</div>
-</div>     
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="js/main.js" type="text/javascript"></script>  
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="http://js.hs-scripts.com/3987475.js"></script>
-<!-- End of HubSpot Embed Code -->    
-<!--[if lte IE 8]>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="http://js.hs-scripts.com/3987475.js"></script>
+  <!-- End of HubSpot Embed Code -->
+  <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
-<div class="container" id="form">
-        <h2 class="text-center pink header-title">Get in touch. Book a tour.</h2>
-        <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
-        <script>
-          hbspt.forms.create({
-            portalId: "3987475",
-            formId: "e19bd344-9bd7-4322-9df3-9c88b11ad626"
-        });
-        </script>
-    </div> 
-<footer>
+  <div class="container" id="form">
+    <h2 class="text-center header-style header-title">Get in touch. Book a tour.</h2>
+    <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        portalId: "3987475",
+        formId: "e19bd344-9bd7-4322-9df3-9c88b11ad626"
+      });
+    </script>
+  </div>
+  <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-1">
-                <img src="assets/Logo_circle.png" alt="Logo circle" width="50px">
-            </div>
-            <div class="col-md-4">
-                <div class="copyright">
-                    <p>hello@coderschool.vn<br><span>© CoderSchool 2018</span></p>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <ul class="list-inline social-buttons">
-                    <li><a href="https://www.twitter.com/harleytt"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/coderschoolvn" rel="nofollow" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/coderschool"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-1">
+          <img src="assets/Logo_circle.png" alt="Logo circle" width="50px">
         </div>
+        <div class="col-md-4">
+          <div class="copyright">
+            <p>hello@coderschool.vn
+              <br>
+              <span>© CoderSchool 2018</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <ul class="list-inline social-buttons">
+            <li>
+              <a href="https://www.twitter.com/harleytt">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/coderschoolvn" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/coderschool">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</footer>     
+  </footer>
 </body>
+
 </html>
