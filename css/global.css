@@ -250,7 +250,7 @@
   box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 #space-section h2 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   color: rgb(247, 74, 74);
   margin-bottom: 25px;
@@ -260,7 +260,7 @@
 }
 .space-info-right p, .space-info-left p {
   margin-left: 44px;
-  font-size: 23px;
+  font-size: 1.25rem;
   color: 333;
   margin-bottom: 0;
 }
@@ -490,8 +490,11 @@ ul.social-buttons {
 }
 
 
-@media (min-width: 992px){
-
+@media (max-width: 992px){
+  .space-info-right, .space-info-left{
+    top: 0;
+    height: 348px;
+  }
 }
   @media (max-width: 768px) {
   /* .mobile-display {
@@ -510,20 +513,22 @@ ul.social-buttons {
   /*Space Section*/
   #space-section p,
   #space-section h2 {
-    text-align: center;
+    
     margin-left: auto;
     margin-right: auto;
   }
   #space-section .btn {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: block;
-    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+    
+    /* padding: 20px 10px; */
   }
   .space-info-right,
   .space-info-left {
-    left: 0;
+    padding-left: 44px;
+    padding-bottom: 38px;
+    height: auto;
   }
  
 }
