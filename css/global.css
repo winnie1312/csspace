@@ -208,9 +208,6 @@
 #space .card-title {
   margin-top: 15px;
 }
-#space .card-body p {
-  height: 120px;
-}
 
 
 .btn-primary {
@@ -218,11 +215,11 @@
   height: 60px;
   padding-left: 57px;
   padding-right: 57px;
-  border: rgb(247, 74, 74) solid 1px; 
-  color: rgb(247, 74, 74);
-  background-color: #fff;
+  color: #fff;
+  background-color: rgb(247, 74, 74);
   font-size: 20px;
   padding-top: 14px;
+  border: none;
 }
 .btn-primary:hover {
   background-color:rgb(247, 74, 74);
@@ -232,33 +229,12 @@
 }
 .btn-primary:focus {
   background-color: rgb(247, 74, 74);
-  border: #3d3d3d solid 0px;
+  border: none;
   outline: none !important;
   color: white;
 }
 
-.card-button {
-  margin-left: 44px;
-  height: 60px;
-  padding-left: 57px;
-  padding-right: 57px;
-  border: rgb(247, 74, 74) solid 1px; 
-  background-color: rgb(247, 74, 74);
-  color: #fff;
-  font-size: 20px;
-  padding-top: 14px;
-}
-.card-button:hover {
-  background-color: rgb(247, 74, 74);
-  color: white;
-  opacity: 0.8;
-}
-.card-button:focus {
-  background-color: rgb(247, 74, 74);
-  border: #3d3d3d solid 0px;
-  outline: none !important;
-  color: white;
-}
+
 
 /* Space Section */
 /* #space-section div {
@@ -266,8 +242,10 @@
   margin-bottom: 15px;
 } */
 #space-section img {
-  border-radius: 10px;
-  width:669px;
+  border-radius: 5px;
+  /* width:669px; */
+  width: 100%;
+  background-size: cover;
   height: 348px;
   box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -287,25 +265,30 @@
   margin-bottom: 0;
 }
 .space-info-right {
-  width: 470px;
+  /* width: 470px; */
   height: 300px;
   position: relative;
   top: 24px;
-  left: -100px;
-  
+  /* left: -100px; */
   padding-left: -100px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .space-info-left {
-  width: 470px;
+  /* width: 470px; */
   height: 300px;
   position: relative;
   top: 24px;
-  right: -100px;
-  
+  /* right: -100px; */
   padding-left: -100px;
   background-color: rgba(255, 255, 255, 0.9);
 }
+.img-left {
+  padding-left: 0;
+}
+.img-right {
+  padding-right: 0;
+}
+
 /* expanded cards */
 .space-item {
   margin-top: 100px;
@@ -313,6 +296,8 @@
 
 .card-deck .card {
   border: none;
+  padding: 30px;
+  margin-top: 20px;
 }
 .card .d-flex h3 {
   font-size: 23px;
@@ -323,7 +308,24 @@
   border: 2px solid rgb(247, 74, 74);
   width: 60%;
   margin-top: 30px;
+  outline: none;
 }
+.btn {
+  box-shadow: none !important;
+
+}
+.card .d-flex a.btn:hover  {
+  opacity: 0.7;
+  
+}
+
+.card .d-flex a.btn:active {
+  background-color: rgb(247, 74, 74) !important;
+  border: none;
+  color: #fff;
+}
+
+
 .card .d-flex .card-text {
   color: #000;
 }
@@ -333,7 +335,7 @@
 }
 /* Location section */
 .gray-bg {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   background-color: #f9f9f9;
 }
@@ -488,14 +490,16 @@ ul.social-buttons {
 }
 
 
-@media (max-width: 768px) {
-  /* GLobal */
-  .mobile-display {
+@media (min-width: 992px){
+
+}
+  @media (max-width: 768px) {
+  /* .mobile-display {
     display: inline-block;
   }
   .desktop-display {
     display: none;
-  }
+  } */
   /* Video Banner */
   .overlay h1 {
     font-size: 30px;
@@ -519,13 +523,12 @@ ul.social-buttons {
   }
   .space-info-right,
   .space-info-left {
-    top: -50px;
     left: 0;
   }
-  /* Amenities Section */
-  .icon {
-    margin: 5px 2px;
-    width: 30%;
-    height: auto;
-  }
+ 
+}
+
+
+@media (min-width: 576px)
+
 }
