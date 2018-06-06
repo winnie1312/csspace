@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top box-shadow">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top box-shadow">
     <div class="container">
       <a class="navbar-brand" href="http://www.coderschool.vn/">
         <picture>
@@ -32,15 +32,17 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase nav-book-button" href="#form">book a tour</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
             <a class="nav-link text-uppercase" href="#community">Community</a>
           </li>
           <li class="nav-item ml-3 pt-1">
-            <a class="nav-link text-uppercase" href="#space-section">Our Space</a>
+            <a class="nav-link text-uppercase" href="#space">Our Space</a>
           </li>
           <li class="nav-item ml-3 pt-1">
             <a class="nav-link text-uppercase" href="#location">Location</a>
           </li>
-          <!-- <li class="nav-item ml-3 pt-1"><a class="nav-link text-uppercase " href="#">Book a Tour</a></li> -->
         </ul>
       </div>
     </div>
@@ -55,7 +57,7 @@
     </div>
     <div class="overlay">
       <h1>Meet your new home</h1>
-      <button>Book a tour</button>
+      <a class="btn button" href="#form">Book a tour</a>
     </div>
   </div>
   <!-- COMMUNITY SECTION -->
@@ -111,7 +113,7 @@
               <img src="assets/building.svg" width="100px" height="auto">
               <h5 class="card-title">Our Space</h5>
               <p class="card-text">Whether you want to rent an office, or host an event, etc. We cover all of your needs.</p>
-              <a href="#space-section" class="btn btn-primary px-4 mx-auto">See more</a>
+              <a href="#space-section" class="btn card-button px-4 mx-auto">See more</a>
             </div>
           </div>
         </div>
@@ -122,7 +124,7 @@
               <h5 class="card-title">Community</h5>
               <p class="card-text">We develop a really close relationship with tech industry and tech talents here in Vietnam. Join our mailing
                 list for further updates on classes, events, etc.</p>
-              <a href="#community" class="btn btn-primary px-4 mx-auto">Join us</a>
+              <a href="#community" class="btn card-button px-4 mx-auto">Join us</a>
             </div>
           </div>
         </div>
@@ -133,7 +135,7 @@
               <h5 class="card-title">Location</h5>
               <p class="card-text">Located in the heart of D4, just 5 mins away from D1. It's surrounded by local restaurants that are waiting for
                 you to explore</p>
-              <a href="#location" class="btn btn-primary px-4 mx-auto">Find us</a>
+              <a href="#location" class="btn card-button px-4 mx-auto">Find us</a>
             </div>
           </div>
         </div>
@@ -156,23 +158,52 @@
                 aria-controls="collapseExample">See more</a>
             </div>
           </div>
-          <div class="row collapse" id="event-space-price">
-            <div class="col-md-4">
-              <h2>GOOD START - 1 MONTH</h2>
-              <p>Capacity: 50-100 people</p>
-              <p>Price: From 2.000.000/hour</p>
+          <div class="row collapse card-deck text-left" id="event-space-price">
+            <!-- card 1 -->
+            <div class="card mb-4 box-shadow">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title text-uppercase text-danger">good start - 1month</h3>
+                <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
+                <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                <a class="btn btn-lg" href="#">Select</a>
+              </div>  
             </div>
-            <div class="col-md-4">
-              <h2>GOOD START - 1 MONTH</h2>
-              <p>Capacity: 50-100 people</p>
-              <p>Price: From 2.000.000/hour</p>
+            <!-- card 2 -->
+            <div class="card mb-4 box-shadow">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title text-uppercase text-danger">good start - 1month</h3>
+                <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
+                <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                <a class="btn btn-lg" href="#">Select</a>
+              </div>  
             </div>
-            <div class="col-md-4">
-              <h2>GOOD START - 1 MONTH</h2>
-              <p>Capacity: 50-100 people</p>
-              <p>Price: From 2.000.000/hour</p>
+            <!-- card 3 -->
+            <div class="card mb-4 box-shadow">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title text-uppercase text-danger">good start - 1month</h3>
+                <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
+                <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                <a class="btn btn-lg" href="#">Select</a>
+              </div>  
             </div>
           </div>
+          <!-- <div class="row collapse" id="event-space-price">
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+            <div class="col-md-4">
+              <h2>GOOD START - 1 MONTH</h2>
+              <p>Capacity: 50-100 people</p>
+              <p>Price: From 2.000.000/hour</p>
+            </div>
+          </div> -->
           <!-- classroom -->
           <div class="row">
             <div class="col-md-7 order-md-2">
@@ -274,7 +305,7 @@
     <div class="row">
       <div class="col-md-6">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.637329812277!2d106.70538841480064!3d10.76240879233108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f693a5128df%3A0x76966b260234240b!2zQ29wYWMgU3F1YXJlLCAxMiBUw7RuIMSQ4bqjbiwgcGjGsOG7nW5nIDEzLCBRdeG6rW4gNCwgSOG7kyBDaMOtIE1pbmggNzAwMDAw!5e0!3m2!1sen!2s!4v1527006415421"
-          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="col-md-6" id="info">
         <h3>ADDRESS</h3>
@@ -302,8 +333,8 @@
   <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
-  <div class="container" id="form">
-    <h2 class="text-center header-style header-title">Get in touch. Book a tour.</h2>
+  <div class="gray-bg container-fluid py-5" id="form">
+    <h2 class="text-center header-style header-title py-4">Book a tour.</h2>
     <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
     <script>
       hbspt.forms.create({
@@ -312,11 +343,19 @@
       });
     </script>
   </div>
-  <footer>
+
+  <!-- SUPPORTERS AREA -->
+  <section>
+    <div class="container partners-area">
+      <img class="partners" src="./assets/partners.jpg" alt="partners of Coderschool">  
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="gray-bg">
     <div class="container">
       <div class="row">
         <div class="col-md-1">
-          <img src="assets/Logo_circle.png" alt="Logo circle" width="50px">
+          <img src="assets/Logo_circle.png" alt="Logo circle">
         </div>
         <div class="col-md-4">
           <div class="copyright">
@@ -330,7 +369,7 @@
           <ul class="list-inline social-buttons">
             <li>
               <a href="https://www.twitter.com/harleytt">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li>

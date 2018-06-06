@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.4s ease-in-out;
   font-family: "Montserrat", sans-serif;
 }
 .center {
@@ -82,7 +81,15 @@
   color: #fff !important;
 }
 
-/* book a tour butotn on nav */
+/* book a tour button on nav */
+.nav-book-button {
+  display: none;
+}
+.nav-book-button.show {
+  display: block;
+  color: rgb(247, 74, 74)!important;
+}
+/* book a tour button on video */
 .btn-book-tour {
   border: rgb(247, 74, 74) solid 1px;
   color: rgb(247, 74, 74) !important;
@@ -152,7 +159,7 @@
   color: white;
   font-size: 7em;
 }
-.overlay button {
+.overlay a.button {
   margin-top: 10px;
   font-size: 1.5em;
   color: #fff;
@@ -164,7 +171,7 @@
   cursor: pointer;
   z-index:1000;
 }
-.overlay button:hover {
+.overlay a.button:hover {
   opacity: 0.7;
 }
 
@@ -189,21 +196,22 @@
 }
 
 /* Card section */
-.card {
+#space .card {
   width: 98%;
   margin: 20px auto;
 }
-.card-body {
+#space .card-body {
   text-align: center;
   margin: 0;
 }
 
-.card-title {
+#space .card-title {
   margin-top: 15px;
 }
-.card-body p {
+#space .card-body p {
   height: 120px;
 }
+
 
 .btn-primary {
   margin-left: 44px;
@@ -216,14 +224,36 @@
   font-size: 20px;
   padding-top: 14px;
 }
-
 .btn-primary:hover {
-   
+  background-color:rgb(247, 74, 74);
+  color: white;
+  opacity: 0.8;
+  border: none;
+}
+.btn-primary:focus {
+  background-color: rgb(247, 74, 74);
   border: #3d3d3d solid 0px;
+  outline: none !important;
+  color: white;
+}
+
+.card-button {
+  margin-left: 44px;
+  height: 60px;
+  padding-left: 57px;
+  padding-right: 57px;
+  border: rgb(247, 74, 74) solid 1px; 
+  background-color: rgb(247, 74, 74);
+  color: #fff;
+  font-size: 20px;
+  padding-top: 14px;
+}
+.card-button:hover {
+  background-color: rgb(247, 74, 74);
   color: white;
   opacity: 0.8;
 }
-.btn-primary:focus {
+.card-button:focus {
   background-color: rgb(247, 74, 74);
   border: #3d3d3d solid 0px;
   outline: none !important;
@@ -250,7 +280,7 @@
   margin-left: 44px;
   /* width: 250px; */
 }
-#space-section p {
+.space-info-right p, .space-info-left p {
   margin-left: 44px;
   font-size: 23px;
   color: #5e5e5e;
@@ -276,32 +306,42 @@
   padding-left: -100px;
   background-color: rgba(255, 255, 255, 0.9);
 }
+.card .d-flex h3 {
+  font-size: 23px;
+  font-weight: 500;
+}
+.card .d-flex a.btn {
+  color: rgb(247, 74, 74);
+  border: 1px solid rgb(247, 74, 74);
+  width: 60%;
+  margin-top: 30px;
+}
 .price-details {
   margin-top: 15px;
 }
 /* Location section */
 .gray-bg {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: #f9f9f9;
 }
 
-#location iframe {
-  padding-left: 0;
+
+/* OUR LOCATION */
+#info {
+  padding-top: 40px;
 }
 
 #info h3 {
-  color: rgba(247, 74, 74, 1);
+  color: #333;
   font-weight: 700;
-  border: rgba(247, 74, 74, 1) solid 2px;
+  /* border: rgba(247, 74, 74, 1) solid 2px; */
   border-radius: 5px;
   display: block;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
   margin-top: 15px;
-  margin-bottom: 15px;
   font-size: 1.4em;
 }
 #info p {
@@ -310,8 +350,6 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/* Amenities Section */
-
 
 .icon {
   margin: 5px 10px;
@@ -329,7 +367,9 @@
   margin-left: auto;
   margin-right: auto;
 }
-
+#community, #space, #location {
+  padding-top: 50px;
+}
 #community img {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -348,6 +388,7 @@
   margin-right: auto;
 }
 /* Hubspot Form Section */
+
 #form h2 {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -369,53 +410,71 @@ form.hs-form,
 .hs_submit {
   text-align: center;
 }
+
+/* SUPPORTERS */
+.partners-area {
+  padding: 50px;
+}
+
+img.partners {
+  max-width: 100%;
+}
 /* Footer */
-.copyright p {
-  font-weight: 700;
+footer {
+  padding: 40px;
+  text-align: center;
 }
-.copyright span {
-  font-weight: 400;
+
+footer img {
+  width: 60px;
 }
-footer ul {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-end;
-  justify-content: flex-end;
+footer .copyright {
+  line-height: 20px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  margin: 6px 0;
+  color: #616161;
 }
-.list-inline li {
+
+footer p {
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0 0 10px;
+}
+
+.list-inline {
   list-style: none;
+  padding-left: 0;
+}
+.list-inline>li {
   display: inline-block;
-  margin-left: 30px;
-  border: 1px solid #aaaaaa;
-  border-radius: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ul.social-buttons li a {
+  display: block;
+  border: 2px solid #616161;
   height: 50px;
   width: 50px;
-  color: #aaaaaa;
+  border-radius: 100%;
+  font-size: 23px;
+  line-height: 46px;
+  color: #616161;
+  outline: 0;
+  text-align: center;
 }
 
-footer a {
-  width: 100%;
-  height: 100%;
-  font-size: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #aaaaaa;
-  position: relative;
-  top: 12px;
-  left: 17px;
+ul.social-buttons li a:hover {
+  border: none;
+  color: #fff;
+  background-color: #d2423e;
 }
-footer li:hover {
-  border: 0px solid #aaaaaa;
-  background-color: #e13640;
-  /* transition: all 0.1!important ease-in-out !important; */
+ 
+ul.social-buttons {
+  margin: 5px 0 0;
+  text-align: right;
 }
 
-footer li:hover a {
-  color: white;
-}
-
-/* i[class="fa"] {
-} */
 
 @media (max-width: 768px) {
   /* GLobal */
