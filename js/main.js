@@ -1,5 +1,3 @@
-$(document).ready(function () {
-    $(".navbar").toggleClass("bg-dark");    	
 		//navbar scrolling
 		$(window).on("scroll", function() {
 			if($(window).scrollTop() > 10) {
@@ -9,21 +7,19 @@ $(document).ready(function () {
 					//remove the background property so it comes transparent again (defined in your css)
 				 $(".navbar").removeClass("navbar-scrolled");
 				 $(".nav-link").removeClass("nav-link-scrolled");
-			}
-		});
-		//add book a tour button when scrolling
-		$(window).on("scroll", function() {
-			if($(window).scrollTop()>800) {
-				$().addClass
+      }
+      
+      if($(window).scrollTop()>500) {
+				$(".nav-book-button").addClass("show");
 			}	else {
-
+        $(".nav-book-button").removeClass("show")
 			}
 		});
-
-
+		//add "book a tour" button when scrolling
+		
     $(".active").toggleClass("active");
     $(".active").onclick = $(".active").toggleClass("active");
-});
+
 // Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']"),
 
