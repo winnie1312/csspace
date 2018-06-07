@@ -163,16 +163,16 @@
   margin-top: 10px;
   font-size: 1.5em;
   color: #fff;
-  background-color: #ff5454;
+  background-image: linear-gradient(108deg, #ff9e9e, #ff5f5f);
   padding: 10px 30px;
-  border-radius: 10px;
-  border: 2px solid #ff5454;
+  border-radius: 36px;
+  /* border: 2px solid #ff5454; */
   font-weight: 700;
   cursor: pointer;
   z-index:1000;
 }
 .overlay a.button:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* main area */
@@ -268,8 +268,15 @@
 }
 
 /* expanded cards */
+
 .space-item {
   margin-top: 100px;
+  background-color: rgba(245, 245, 245, 0.9);
+}
+
+.space-item .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .card-deck .mb-4 {
@@ -289,6 +296,7 @@
   border: 2px solid rgb(247, 74, 74);
   margin-top: 30px;
   outline: none;
+  
 }
 .btn {
   box-shadow: none !important;
@@ -314,11 +322,13 @@
   margin-top: 15px;
   margin-left: 44px;
   height: 60px;
-  padding-left: 57px;
-  padding-right: 57px;
+  width: 192px;
+  /* padding-left: 57px;
+  padding-right: 57px; */
   color: #fff;
-  background-color: rgb(247, 74, 74);
-  font-size: 20px;
+  /* background-color: rgb(247, 74, 74); */
+  background-image: linear-gradient(108deg, #ff9e9e, #ff5f5f);
+  font-size: 1.25rem;
   padding-top: 14px;
   border: none;
 }
@@ -428,6 +438,18 @@ form.hs-form,
   text-align: center;
 }
 
+
+#form .hs-button.primary.large {
+  background-image: linear-gradient(90deg, #ff8d8d, #ff4d4d);
+  border-radius: 36px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 17px 65px;
+  border: none;
+  font-family: 'Montserrat';
+}
+
 /* SUPPORTERS */
 .partners-area {
   padding: 50px;
@@ -492,6 +514,11 @@ ul.social-buttons {
   text-align: right;
 }
 
+@media (min-width: 1200px) {
+  .card .d-flex a.btn {
+    width: 190px;
+  }
+}
 
 @media (max-width: 992px){
   #info {
@@ -547,6 +574,7 @@ ul.social-buttons {
     padding-right: 44px;
     padding-bottom: 38px;
     height: auto;
+    background-color: transparent;
   }
   .img-left {
     padding-right: 0;
@@ -564,7 +592,6 @@ ul.social-buttons {
   }
 }
 
-
 @media (max-width: 576px) {
   .overlay, .video-container, .desktop-display {
     height: 202px;
@@ -572,6 +599,48 @@ ul.social-buttons {
   .overlay a.button {
     font-size: 13px;
     margin-top: 0;
-    padding: 5px 10px;
+    padding: 10px 20px;
   }
+  #space-section .btn {
+    width: 100%;
+  } 
+
+  #space-section img {
+    height: auto;
+  }
+  #space-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .space-info-right p,
+  .space-info-left p {
+    font-size: 1rem;
+  }
+  .price-details {
+    font-size: 1.15rem;
+  }
+  .card .d-flex h3 {
+    font-size: 1.25rem;
+  }
+  
+  .space-item .card {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .space-item .card-body {
+    padding: 31px;
+  }
+  #community .row {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+
+  #form .actions {
+    margin-left: 0;
+  }
+  footer .copyright {
+    margin-left: 0;
+  }
+  /* .header-style {
+    font-size: 20px;
+  } */
 }

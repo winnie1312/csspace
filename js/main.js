@@ -21,11 +21,10 @@
     // CLICK BUTTON, "SEE MORE" TO "CLOSE"
     $(".price-details").click(function () {
       $(this).text(function(i, text){
-        return text === "See more" ? "Close" : "See more";})
+        return text === "See more" ? "See less " : "See more";})
     });
-    
-		//add "book a tour" button when scrolling
-		
+
+		//add "book a tour" button when scrolling		
     $(".active").toggleClass("active");
     $(".active").onclick = $(".active").toggleClass("active");
 
