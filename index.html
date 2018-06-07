@@ -21,7 +21,7 @@
       <a class="navbar-brand" href="http://www.coderschool.vn/">
         <picture>
           <source media="(min-width: 768px)" srcset="https://svgshare.com/i/6RK.svg">
-          <source media="(max-width: 767px)" srcset="https://svgshare.com/i/6P9.svg">
+          <source media="(max-width: 767px)" srcset="https://svgshare.com/i/6RK.svg">
           <img src="https://svgshare.com/i/6P9.svg" alt="CS-responsive" width="180px;">
         </picture>
       </a>
@@ -30,10 +30,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item ml-3 pt-1">
-            <a class="nav-link text-uppercase nav-book-button" href="#form">book a tour</a>
-          </li>
+        <ul class="navbar-nav ml-auto">          
           <li class="nav-item ml-3 pt-1">
             <a class="nav-link text-uppercase" href="#community">Community</a>
           </li>
@@ -42,6 +39,9 @@
           </li>
           <li class="nav-item ml-3 pt-1">
             <a class="nav-link text-uppercase" href="#location">Location</a>
+          </li>
+          <li class="nav-item ml-3 pt-1">
+            <a class="nav-link text-uppercase nav-book-button" href="#form">book a tour</a>
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
       <img src="assets/classroom.jpg" width="100%" height="auto" class="mobile-display">
     </div>
     <div class="overlay">
-      <h1 class="text-center">Meet your new home</h1>
+      <p class="text-center">Meet your new home</p>
       <a class="btn button" href="#form">Book a tour</a>
     </div>
   </div>
@@ -103,43 +103,43 @@
       </div>
     </div>
   <!-- OUR SPACE SECTION -->
-    <div id="space" class=" main-area container">
+    <div id="space" class=" main-area">
       <h2 class="text-center header-style">DISCOVER OUR CAMPUS</h2>
       <div class="header-line mx-auto"></div>
-      <div class="row">
-        <div class="col-md-4 col-12">
-          <div class="card">
-            <div class="card-body d-flex flex-column">
-              <img class="mx-auto" src="assets/building.svg" width="100px" height="auto">
-              <h5 class="card-title">Our Space</h5>
-              <p class="card-text mb-auto">Whether you want to rent an office, or host an event, etc. We cover all of your needs.</p>
-            </div>
+    </div>
+    <div class="container">
+      <div class="card-deck">
+        <div class="card mb-3 box-shadow">
+          <div class="card-header text-center bg-transparent">
+            <img class="mx-auto" src="assets/building.svg" width="100px" height="100px">
+          </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">Our Space</h5>
+            <p class="card-text mb-auto">Whether you want to rent an office, or host an event, etc. We cover all of your needs.</p>
           </div>
         </div>
-        <div class="col-md-4 col-12">
-          <div class="card">
-            <div class="card-body d-flex flex-column ">
+        <div class="card mb-3 box-shadow">
+            <div class="card-header text-center bg-transparent">
               <img class="mx-auto" src="assets/community.svg" width="100px" height="auto">
-              <h5 class="card-title">Community</h5>
-              <p class="card-text mb-auto">We develop a really close relationship with tech industry and tech talents here in Vietnam. Join our mailing
-                list for further updates on classes, events, etc.</p>
-              
             </div>
+          <div class="card-body d-flex flex-column ">
+            <h5 class="card-title text-center">Community</h5>
+            <p class="card-text mb-auto">We develop a really close relationship with tech industry and tech talents here in Vietnam. Join our mailing
+              list for further updates on classes, events, etc.</p>  
           </div>
         </div>
-        <div class="col-md-4 col-12">
-          <div class="card">
-            <div class="card-body d-flex flex-column">
+        <div class="card mb-3 box-shadow">
+            <div class="card-header text-center bg-transparent">
               <img class="mx-auto" src="assets/location.svg" width="100px" height="auto">
-              <h5 class="card-title">Location</h5>
-              <p class="card-text mb-auto">Located in the heart of D4, just 5 mins away from D1. It's surrounded by local restaurants that are waiting for
-                you to explore</p>
-              
             </div>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">Location</h5>
+            <p class="card-text mb-auto">Located in the heart of D4, just 5 mins away from D1. It's surrounded by local restaurants that are waiting for
+              you to explore</p>  
           </div>
         </div>
       </div>
-    </div>
+    </div>  
     <!-- room cards -->
       <div class="gray-bg">
         <div class="container" id="space-section">
@@ -153,7 +153,7 @@
                 <h2 class="bot-left">EVENT HALL</h2>
                 <p>Capacity: 50-100 people</p>
                 <p>Price: From 2.000.000/hour</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#event-space-price" role="button" aria-expanded="false"
+                <a class="btn price-details" data-toggle="collapse" href="#event-space-price" role="button" aria-expanded="false"
                   aria-controls="collapseExample">See more</a>
               </div>
             </div>
@@ -162,9 +162,9 @@
               <!-- card 1 -->
               <div class="card mb-4 box-shadow">
                 <div class="card-body d-flex flex-column">
-                  <h3 class="card-title text-uppercase text-danger">good start </br> - 1month</h3>
+                  <h3 class="card-title text-uppercase text-danger">good start </br> - 1 month</h3>
                   <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
-                  <p class="card-text mb-auto">Price: from 300,000 VND/ hr vfgrgrgrhtrhrthrthrth</p>
+                  <p class="card-text mb-auto">Price: from 300,000 VND/ hour</p>
                   <a class="btn btn-lg" href="#">Select</a>
                 </div>  
               </div>
@@ -173,7 +173,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title text-uppercase text-danger">smart choice </br> - 6 months</h3>
                   <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
-                  <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                  <p class="card-text mb-auto">Price: from 300,000 VND/ hour</p>
                   <a class="btn btn-lg" href="#">Select</a>
                 </div>  
               </div>
@@ -182,7 +182,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title text-uppercase text-danger">best deal </br> - 12 months</h3>
                   <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
-                  <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                  <p class="card-text mb-auto">Price: from 300,000 VND/ hour</p>
                   <a class="btn btn-lg" href="#">Select</a>
                 </div>  
               </div>
@@ -199,7 +199,7 @@
                 <h2 class="bot-left">CLASSROOM</h2>
                 <p>Capacity: 10-30 people</p>
                 <p>Price: From 300.000VND/hour</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#classroom-price" role="button" aria-expanded="false"
+                <a class="btn  price-details" data-toggle="collapse" href="#classroom-price" role="button" aria-expanded="false"
                   aria-controls="collapseExample">See more</a>
               </div>
             </div>
@@ -210,7 +210,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title text-uppercase text-danger">good start </br> - 1 month</h3>
                   <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
-                  <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                  <p class="card-text mb-auto">Price: from 300,000 VND/ hour</p>
                   <a class="btn btn-lg" href="#">Select</a>
                 </div>  
               </div>
@@ -219,7 +219,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title text-uppercase text-danger">smart choice </br> - 6 months</h3>
                   <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
-                  <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                  <p class="card-text mb-auto">Price: from 300,000 VND/ hour</p>
                   <a class="btn btn-lg" href="#">Select</a>
                 </div>  
               </div>
@@ -228,7 +228,7 @@
                 <div class="card-body d-flex flex-column">
                   <h3 class="card-title text-uppercase text-danger">best deal </br> - 12 months</h3>
                   <p class="card-text mb-auto">Capacity: 10-30 ppl</p>
-                  <p class="card-text mb-auto">Price: from 300,000 VND/ hr</p>
+                  <p class="card-text mb-auto">Price: from 300,000 VND/ hour</p>
                   <a class="btn btn-lg" href="#">Select</a>
                 </div>  
               </div>
@@ -245,7 +245,7 @@
                 <h2 class="bot-left">OFFICE ROOMS</h2>
                 <p>Capacity: 4-12 people</p>
                 <p>Price: From 12.000.000/month</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#office-price" role="button" aria-expanded="false"
+                <a class="btn price-details" data-toggle="collapse" href="#office-price" role="button" aria-expanded="false"
                   aria-controls="collapseExample">See more</a>
               </div>
             </div>
@@ -291,7 +291,7 @@
                 <h2 class="bot-left">METTING ROOM</h2>
                 <p>Capacity: 10-30 people</p>
                 <p>Price: From 300.000VND/hour</p>
-                <a class="btn btn-primary price-details" data-toggle="collapse" href="#meetingroom-price" role="button" aria-expanded="false"
+                <a class="btn price-details" data-toggle="collapse" href="#meetingroom-price" role="button" aria-expanded="false"
                   aria-controls="collapseExample">See more</a>
               </div>
             </div>
@@ -366,7 +366,9 @@
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
 <![endif]-->
   <div class="gray-bg container-fluid py-5" id="form">
-    <h2 class="text-center header-style header-title py-4">Book a tour.</h2>
+    <!-- <h2 class="text-center header-style header-title py-4">Book a tour.</h2> -->
+    <h2 class="text-center header-style text-uppercase">Book a tour</h2>
+    <div class="header-line mx-auto"></div>
     <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script>
     <script>
       hbspt.forms.create({

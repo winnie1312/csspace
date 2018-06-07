@@ -77,17 +77,18 @@
 .navbar-scrolled {
   background-color: #333;
 }
+.navbar-white {
+  background-color: #fff;
+}
 .nav-link-scrolled {
   color: #fff !important;
 }
 
 /* book a tour button on nav */
-.nav-book-button {
-  display: none;
-}
 .nav-book-button.show {
-  display: block;
+ 
   color: rgb(247, 74, 74)!important;
+  
 }
 /* book a tour button on video */
 .btn-book-tour {
@@ -118,7 +119,6 @@
 }
 .layer-cover {
   position: absolute;
-  background-color: #333;
   opacity: 0.4;
   height: 100%;
   width: 100%;
@@ -131,12 +131,12 @@
   /* padding-bottom: 0; */
   width: 100%;
   /* height: 100%; */
-  height: calc(100vh - 60px);
+  /* height: calc(100vh - 60px); */
   
 }
 .overlay {
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -155,9 +155,9 @@
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.overlay h1 {
+.overlay p {
   color: white;
-  font-size: 7em;
+  font-size: 70px;
 }
 .overlay a.button {
   margin-top: 10px;
@@ -201,38 +201,15 @@
   margin: 20px auto;
 }
 #space .card-body {
-  text-align: center;
+  /* text-align: center; */
   margin: 0;
 }
 
 #space .card-title {
   margin-top: 15px;
+  text-align: center;
 }
 
-
-.btn-primary {
-  margin-left: 44px;
-  height: 60px;
-  padding-left: 57px;
-  padding-right: 57px;
-  color: #fff;
-  background-color: rgb(247, 74, 74);
-  font-size: 20px;
-  padding-top: 14px;
-  border: none;
-}
-.btn-primary:hover {
-  background-color:rgb(247, 74, 74);
-  color: white;
-  opacity: 0.8;
-  border: none;
-}
-.btn-primary:focus {
-  background-color: rgb(247, 74, 74);
-  border: none;
-  outline: none !important;
-  color: white;
-}
 
 
 
@@ -256,6 +233,7 @@
   margin-bottom: 25px;
   margin-top: 38px;
   margin-left: 44px;
+  display: inline-block;
   /* width: 250px; */
 }
 .space-info-right p, .space-info-left p {
@@ -294,8 +272,11 @@
   margin-top: 100px;
 }
 
-.card-deck .card {
+.card-deck .mb-4 {
   border: none;
+}
+
+.card-deck .card {
   padding: 30px;
   margin-top: 20px;
 }
@@ -306,7 +287,6 @@
 .card .d-flex a.btn {
   color: rgb(247, 74, 74);
   border: 2px solid rgb(247, 74, 74);
-  width: 60%;
   margin-top: 30px;
   outline: none;
 }
@@ -332,6 +312,28 @@
 
 .price-details {
   margin-top: 15px;
+  margin-left: 44px;
+  height: 60px;
+  padding-left: 57px;
+  padding-right: 57px;
+  color: #fff;
+  background-color: rgb(247, 74, 74);
+  font-size: 20px;
+  padding-top: 14px;
+  border: none;
+}
+
+.price-details:hover {
+  background-color:rgb(247, 74, 74);
+  color: white;
+  opacity: 0.8;
+  border: none;
+}
+.price-details:focus {
+  background-color: rgb(247, 74, 74);
+  border: none;
+  outline: none !important;
+  color: white;
 }
 /* Location section */
 .gray-bg {
@@ -343,7 +345,8 @@
 
 /* OUR LOCATION */
 #info {
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-left: 50px;
 }
 
 #info h3 {
@@ -354,13 +357,13 @@
   display: block;
   width: 100%;
   padding-top: 15px;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 15px;
   font-size: 1.4em;
 }
 #info p {
   margin-bottom: 0;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -371,13 +374,13 @@
 }
 /* Community Section */
 .community-content-wrapper {
-  height: 200px;
   width: 75%;
   background-color: rgba(255, 255, 255, 0.9);
   position: relative;
   top: -60px;
   z-index: 3;
-  text-align: center;
+  text-align: left;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -395,9 +398,9 @@
   /* color: rgba(247, 74, 74, 1); */
   color: #333;
   border-bottom: rgba(247, 74, 74, 1) 2px solid;
-  padding: 10px;
+  
   display: inline-block;
-  text-align: center;
+  padding-bottom: 4px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -479,7 +482,7 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:hover {
-  border: none;
+  border: 2px solid #d2423e;
   color: #fff;
   background-color: #d2423e;
 }
@@ -491,12 +494,29 @@ ul.social-buttons {
 
 
 @media (max-width: 992px){
+  #info {
+    padding-top: 5px;
+  }
   .space-info-right, .space-info-left{
     top: 0;
     height: 348px;
   }
+  footer .copyright {
+    margin-left: 20px;
+  }
 }
   @media (max-width: 768px) {
+    .card-deck .card {
+      padding: 0px;
+    }
+    .partners-area {
+      padding: 30px 1px;
+      
+    }
+    #info {
+      padding-top: 10px;
+      padding-left: 15px;
+    }
   /* .mobile-display {
     display: inline-block;
   }
@@ -504,8 +524,8 @@ ul.social-buttons {
     display: none;
   } */
   /* Video Banner */
-  .overlay h1 {
-    font-size: 30px;
+  .overlay p {
+    font-size: 25px;
   }
   .overlay button {
     font-size: 15px;
@@ -513,27 +533,45 @@ ul.social-buttons {
   /*Space Section*/
   #space-section p,
   #space-section h2 {
-    
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
   }
+
   #space-section .btn {
+    width: 100%;
     margin: 0 auto;
     margin-top: 20px;
-    
-    
-    /* padding: 20px 10px; */
   }
   .space-info-right,
   .space-info-left {
     padding-left: 44px;
+    padding-right: 44px;
     padding-bottom: 38px;
     height: auto;
   }
- 
+  .img-left {
+    padding-right: 0;
+  }
+  .img-right {
+    padding-left: 0;
+  }
+  footer p {
+    text-align: center;
+    
+  }
+  
+  ul.social-buttons {
+    text-align: center;
+  }
 }
 
 
-@media (min-width: 576px)
-
+@media (max-width: 576px) {
+  .overlay, .video-container, .desktop-display {
+    height: 202px;
+  }
+  .overlay a.button {
+    font-size: 13px;
+    margin-top: 0;
+    padding: 5px 10px;
+  }
 }

@@ -1,11 +1,13 @@
 		//navbar scrolling
 		$(window).on("scroll", function() {
 			if($(window).scrollTop() > 10) {
+        $(".navbar").removeClass("navbar-white");
 					$(".navbar").addClass("navbar-scrolled");
 					$(".nav-link").addClass("nav-link-scrolled");
 			} else {
 					//remove the background property so it comes transparent again (defined in your css)
-				 $(".navbar").removeClass("navbar-scrolled");
+         $(".navbar").removeClass("navbar-scrolled");
+         $(".navbar").addClass("navbar-white");
 				 $(".nav-link").removeClass("nav-link-scrolled");
       }
       
@@ -14,7 +16,14 @@
 			}	else {
         $(".nav-book-button").removeClass("show")
 			}
-		});
+    });
+
+    // CLICK BUTTON, "SEE MORE" TO "CLOSE"
+    $(".price-details").click(function () {
+      $(this).text(function(i, text){
+        return text === "See more" ? "Close" : "See more";})
+    });
+    
 		//add "book a tour" button when scrolling
 		
     $(".active").toggleClass("active");
