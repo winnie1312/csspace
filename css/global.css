@@ -62,6 +62,16 @@
   display: inline-block;
 }
 /* Nav bar */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  border: none;
+  outline: none;
+}
+
 .bg-light {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -76,7 +86,7 @@
 }
 .navbar-scrolled {
   background-color: #fff;
-  border-bottom: 1px solid rgba(0,0,0,.125);
+  /* border-bottom: 1px solid rgba(0,0,0,.125); */
 }
 .navbar-white {
   background-color: #fff;
@@ -101,6 +111,29 @@
 .btn-book-tour:hover {
   opacity: 0.7;
 }
+
+/* RED SCROLL PROGRESS  */
+.progress-container {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background-color:#fff;
+  z-index: 2000;
+}
+.progress-bar#myBar {
+  
+  width: 0%;
+  height: 100%;
+  background-color: red;
+  opacity: 0.5;
+  /* position: relative; */
+  /* transform: scaleX(0);
+  transform-origin: 0; */
+}
+
+
 /*Video banner*/
 .desktop-display {
   height: calc(100vh - 60px); 
@@ -117,6 +150,9 @@
 }
 .main-banner {
   margin-top: 60px;
+}
+.bg {
+  z-index: -2;
 }
 .layer-cover {
   position: absolute;
@@ -220,7 +256,7 @@
   margin-bottom: 15px;
 } */
 #space-section img {
-  border-radius: 5px;
+  border-radius: 3px;
   /* width:669px; */
   width: 100%;
   background-size: cover;
@@ -385,13 +421,15 @@
 }
 /* Community Section */
 .community-content-wrapper {
-  width: 75%;
+  width: 80%;
+  border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.9);
+  
   position: relative;
   top: -60px;
   z-index: 3;
   text-align: left;
-  padding: 15px;
+  padding: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -401,6 +439,7 @@
 #community img {
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 3px;
 }
 #community h2 {
   margin-top: 15px;
@@ -594,6 +633,9 @@ ul.social-buttons {
 }
 
 @media (max-width: 576px) {
+  #community, #space, #location {
+    padding-top: 0;
+  }
   .overlay, .video-container, .desktop-display {
     height: 202px;
   }
@@ -601,6 +643,10 @@ ul.social-buttons {
     font-size: 13px;
     margin-top: 0;
     padding: 10px 20px;
+  }
+  .community-content-wrapper {
+    width: 90%;
+    
   }
   #space-section .btn {
     width: 100%;
@@ -631,8 +677,11 @@ ul.social-buttons {
   .space-item .card-body {
     padding: 31px;
   }
-  #community .row {
-    border-bottom: 1px solid rgba(0,0,0,.125);
+  #space.main-area {
+    margin-top: 0;
+  }
+  .main-area {
+    margin-bottom: 0;
   }
 
   #form .actions {

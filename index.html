@@ -13,6 +13,12 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>CoderSchool Space</title>
+
+  <!-- css animation -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous"> 
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top box-shadow">
@@ -46,7 +52,11 @@
       </div>
     </div>
   </nav>
-  <div class="main-banner">
+  <!-- RED SCROLL PROGRESS -->
+  <div class="progress-container border-bottom">
+      <div class="progress-bar" id="myBar"></div>
+  </div>
+  <div class="main-banner bg">
     <div class="video-container">
       <div class="layer-cover"></div>
       <iframe class="desktop-display" width="100%" src="https://www.youtube.com/embed/NiPq-NBeOD0?playlist=NiPq-NBeOD0;autoplay=1;loop=1;rel=0&amp;controls=0&amp;showinfo=0;mute=1"
@@ -85,7 +95,7 @@
         </div>
         <div class="col-md-6">
           <img src="assets/eventspace.jpg" width="100%">
-          <div class="community-content-wrapper">
+          <div class="community-content-wrapper ">
             <h5>Partnerships</h5>
             <p>Lorem ipsum dolor sit amet, nec ei melius alterum intellegat. Cu malorum accumsan delicatissimi vis, eos agam
               lorem deseruisse ut, vix meis numquam dignissim te. Illud civibus id ius. Id munere altera eligendi sed</p>
@@ -350,8 +360,9 @@
     </div>
   </div>
   
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"

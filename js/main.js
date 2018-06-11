@@ -1,4 +1,4 @@
-		//navbar scrolling
+  //navbar scrolling
 		$(window).on("scroll", function() {
 			if($(window).scrollTop() > 10) {
         $(".navbar").removeClass("navbar-white");
@@ -15,8 +15,39 @@
 				$(".nav-book-button").addClass("show");
 			}	else {
         $(".nav-book-button").removeClass("show")
-			}
+      }
+      // if($("#space").scroll()>10){
+      //   $(this).addClass("animated bounceInDown");
+      // }
+      if($("#space").position().top < $(window).scrollTop() + 700) {
+        $("#space").addClass("animated bounceInDown");
+        
+        // $(".inner-content").addClass("animated slideInRight");
+        // $(".project-grid").addClass("animated slideInLeft");
+      };
+
+      myFunction();
     });
+    function myFunction() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+//    // parallax effect
+//   $(window).bind("scroll", function() {
+//     parallax();
+//   // Function tạo parallax effect
+//   // tốc độ được quy định bởi biến speed - cái này thay đổi theo ý muốn
+//   // scrollPos lấy vị trí hiện tại của thanh cuộn
+//   function parallax() {
+//     let scrollPos = $(window).scrollTop(),
+//             speed = 0.2;
+//     $(".bg").css("top", (0 - (scrollPos * speed)) + "px");
+//   }
+// // end arallax effect
+   
 
     // CLICK BUTTON, "SEE MORE" TO "CLOSE"
     $(".price-details").click(function () {
