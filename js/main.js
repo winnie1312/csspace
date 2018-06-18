@@ -1,7 +1,28 @@
 var scrollTopNav = 10;
-var scrollTopRedBookATour = 500;
+var scrollTopCommunity = 500;
+var windowH = 700;
+function progressBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  $("#scrollIndicator").css("width",scrolled + "%");
+}
 //navbar scrolling
 $(window).on("scroll", function() {
+  // <disable hover>
+  let body = document.body,
+  timer;
+  window.addEventListener('scroll', function() {
+  clearTimeout(timer);
+  if(!body.classList.contains('disable-hover')) {
+  body.classList.add('disable-hover')
+  };
+  timer = setTimeout(function(){
+  body.classList.remove('disable-hover')
+  },500);
+  }, false);
+  // </disable hover>
+
   if($(window).scrollTop() > scrollTopNav) {
     $(".navbar").removeClass("navbar-white");
     $(".navbar").addClass("navbar-scrolled");
@@ -12,22 +33,40 @@ $(window).on("scroll", function() {
     $(".navbar").addClass("navbar-white");
     $(".nav-link").removeClass("nav-link-scrolled");
   }
-  
-  if($(window).scrollTop() > scrollTopRedBookATour) {
+  // animation when scrolling
+  if($(".first-left-img").position().top < $(window).scrollTop() + windowH) {
+    $(".first-left-img").addClass("animated fadeInLeft");
+    $(".first-right-img").addClass("animated fadeInRight");
+  };
+  if($(".second-left-img").position().top < $(window).scrollTop() + 80) {
+    $(".second-left-img").addClass("animated fadeInLeft");
+    $(".second-right-img").addClass("animated fadeInRight");
+  };
+  if($("#space").position().top < $(window).scrollTop() + windowH) {
+    $("#space").addClass("animated fadeInLeft");
+    $("#discover-campus").addClass("animated fadeInRight");  
+  };
+  if($(".event-hall").position().top < $(window).scrollTop() + windowH) {
+    $(".event-hall").addClass("animated fadeInLeft");
+  }
+  if($(".class-room").position().top < $(window).scrollTop() + windowH) {
+    $(".class-room").addClass("animated fadeInRight");
+  }
+  if($(".office-room").position().top < $(window).scrollTop() + windowH) {
+    $(".office-room").addClass("animated fadeInLeft");
+  }
+  if($(".meeting-room").position().top < $(window).scrollTop() + windowH) {
+    $(".meeting-room").addClass("animated fadeInRight");
+  }
+  // show progress bar
+  if($(window).scrollTop() > scrollTopCommunity) {
     $(".nav-book-button").addClass("show");
   }	else {
     $(".nav-book-button").removeClass("show")
   }
   progressBar();
 });
-function progressBar() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  $("#scrollIndicator").css("width",scrolled + "%");
-}
-
-    // CLICK BUTTON, "SEE MORE" TO "CLOSE"
+  // CLICK BUTTON, "SEE MORE" TO "CLOSE"
 $(".price-details").click(function () {
   $(this).text(function(i, text){
     return text === "See more" ? "See less " : "See more";})
