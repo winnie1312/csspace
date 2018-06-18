@@ -38,7 +38,7 @@ $(window).on("scroll", function() {
     $(".first-left-img").addClass("animated fadeInLeft");
     $(".first-right-img").addClass("animated fadeInRight");
   };
-  if($(".second-left-img").position().top < $(window).scrollTop() + 80) {
+  if($(".second-left-img").position().top < $(window).scrollTop() + windowH) {
     $(".second-left-img").addClass("animated fadeInLeft");
     $(".second-right-img").addClass("animated fadeInRight");
   };
@@ -66,11 +66,7 @@ $(window).on("scroll", function() {
   }
   progressBar();
 });
-  // CLICK BUTTON, "SEE MORE" TO "CLOSE"
-$(".price-details").click(function () {
-  $(this).text(function(i, text){
-    return text === "See more" ? "See less " : "See more";})
-});
+
 //add "book a tour" button when scrolling		
 $(".active").toggleClass("active");
 $(".active").onclick = $(".active").toggleClass("active");

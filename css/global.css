@@ -321,7 +321,6 @@
   padding-right: 0;
 }
 
-/* expanded cards */
 .space-item {
   margin-top: 100px;
   background-color: rgba(245, 245, 245, 0.9);
@@ -332,44 +331,8 @@
   margin-right: 0;
 }
 
-.card-deck .mb-4 {
-  border: none;
-}
-
-.card-deck .card {
-  padding: 30px;
-  margin-top: 20px;
-}
-
-.card .d-flex h3 {
-  font-size: 23px;
-  font-weight: 500;
-}
-
-.card .d-flex a.btn {
-  color: rgb(247, 74, 74);
-  border: 2px solid rgb(247, 74, 74);
-  border-radius: 50px;
-  margin-top: 30px;
-  outline: none; 
-}
-
 .btn {
   box-shadow: none !important;
-}
-
-.card .d-flex a.btn:hover  {
-  opacity: 0.7;  
-}
-
-.card .d-flex a.btn:active {
-  background-color: rgb(247, 74, 74) !important;
-  border: none;
-  color: #fff;
-}
-
-.card .d-flex .card-text {
-  color: #000;
 }
 
 .price-details {
@@ -390,7 +353,6 @@
   color: white;
   opacity: 0.8;
   border: none;
-  
 }
 
 .price-details:focus {
@@ -398,8 +360,12 @@
   border: none;
   outline: none !important;
   color: white;
-
 }
+
+.room-options {
+  font-size: 18px;
+}
+
 /* Location section */
 .gray-bg {
   height: 100%;
