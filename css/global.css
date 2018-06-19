@@ -483,8 +483,22 @@ form.hs-form,
   font-size: 20px;
   text-align: center;
   padding: 17px 65px;
-  border: none;
+  border: none !important;
+  box-shadow: none !important;
   font-family: 'Montserrat';
+  text-shadow: none !important;
+}
+
+.hs-button.primary.large:hover {
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+  background-image: linear-gradient(90deg, #ff8d8d, #ff4d4d);
+  opacity: 0.8;
+}
+
+.hs-button.primary.large:active {
+  background-image: linear-gradient(90deg, #ff8d8d, #ff4d4d) !important;
 }
 
 /* SUPPORTERS */
