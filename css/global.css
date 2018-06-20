@@ -256,7 +256,9 @@
   margin-bottom: 50px;
   background-image: linear-gradient(to right, #ffc1c1, #ff6969);
 }
-
+#mobi-show {
+  display: none;
+}
 /* Card section */
 #space .card {
   width: 98%;
@@ -615,6 +617,16 @@ ul.social-buttons {
     padding: 30px 1px;
   }
 
+  .main-banner, #space {
+    display: none;
+  }
+  #mobi-show {
+    display: block;
+    margin-top: 100px;
+  }
+  .header-style {
+    font-size: 1.5rem;
+  }
   #info {
     padding-top: 10px;
     padding-left: 15px;
