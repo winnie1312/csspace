@@ -520,18 +520,19 @@ footer {
 
 footer img {
   width: 60px;
+  margin-top: 4px;
 }
 
 footer .copyright {
   line-height: 20px;
   font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: left;
-  margin: 6px 0;
+  /* margin: 6px 0; */
   color: #616161;
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.75;
   margin: 0 0 10px;
 }
