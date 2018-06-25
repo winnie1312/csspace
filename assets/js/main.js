@@ -1,57 +1,16 @@
-var scrollTopNav = 10;
-var scrollTopCommunity = 500;
-var windowH = 700;
 var $body = $('body');
 var $window = $(window);
-var $document = $(document);
 
 function progressBar() {
-  var winScroll = $document.scrollTop();
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  $("#scrollIndicator").css("width",scrolled + "%");
+  var scrollPosition = $window.scrollTop();
+  var height = $(document).height() - $window.height();
+  var progressBarPosition = (scrollPosition / height) * 100;
+  $("#scrollIndicator").width(progressBarPosition + "%");
 }
 
-//navbar scrolling
 $window.on("scroll", function() {
-  if($window.scrollTop() > scrollTopNav) {
-    $(".navbar").removeClass("navbar-white");
-    $(".navbar").addClass("navbar-scrolled");
-    $(".nav-link").addClass("nav-link-scrolled");
-  } else {
-    //remove the background property so it comes transparent again (defined in your css)
-    $(".navbar").removeClass("navbar-scrolled");
-    $(".navbar").addClass("navbar-white");
-    $(".nav-link").removeClass("nav-link-scrolled");
-  }
-  // animation when scrolling
-  if($(".first-left-img").position().top < $window.scrollTop() + windowH) {
-    $(".first-left-img").addClass("animated fadeInLeft");
-    $(".first-right-img").addClass("animated fadeInRight");
-  };
-  if($(".second-left-img").position().top < $window.scrollTop() + windowH) {
-    $(".second-left-img").addClass("animated fadeInLeft");
-    $(".second-right-img").addClass("animated fadeInRight");
-  };
-  if($("#space").position().top < $window.scrollTop() + windowH) {
-    $("#space").addClass("animated fadeInLeft");
-    $("#discover-campus").addClass("animated fadeInRight");  
-  };
-  if($(".event-hall").position().top < $window.scrollTop() + windowH) {
-    $(".event-hall").addClass("animated fadeInLeft");
-  }
-  if($(".class-room").position().top < $window.scrollTop() + windowH) {
-    $(".class-room").addClass("animated fadeInRight");
-  }
-  if($(".office-room").position().top < $window.scrollTop() + windowH) {
-    $(".office-room").addClass("animated fadeInLeft");
-  }
-  if($(".meeting-room").position().top < $window.scrollTop() + windowH) {
-    $(".meeting-room").addClass("animated fadeInRight");
-  }
-
-  //add "book a tour" button when scrolling		
-  if($window.scrollTop() > scrollTopCommunity) {
+  //add "book a tour" button on navbar when scrolling over BOOK NOW button
+  if($window.scrollTop() > $(".book-now-button").position().top) {
     $(".nav-book-button").addClass("show");
   }	else {
     $(".nav-book-button").removeClass("show")
