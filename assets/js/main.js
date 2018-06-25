@@ -1,16 +1,13 @@
-var $body = $('body');
-var $window = $(window);
-
 function progressBar() {
-  var scrollPosition = $window.scrollTop();
-  var height = $(document).height() - $window.height();
+  var scrollPosition = $(window).scrollTop();
+  var height = $(document).height() - $(window).height();
   var progressBarPosition = (scrollPosition / height) * 100;
   $("#scrollIndicator").width(progressBarPosition + "%");
 }
 
-$window.on("scroll", function() {
+$(window).on("scroll", function() {
   //add "book a tour" button on navbar when scrolling over BOOK NOW button
-  if($window.scrollTop() > $(".book-now-button").position().top) {
+  if($(window).scrollTop() > $(".book-now-button").position().top) {
     $(".nav-book-button").addClass("show");
   }	else {
     $(".nav-book-button").removeClass("show")
@@ -30,8 +27,8 @@ $.each($allVideos,function() {
     .removeAttr('width');
 });
 // When the window is resized
-$window.resize(function() {
-  var newWidth = $body.width();
+$(window).resize(function() {
+  var newWidth = $('body').width();
   // Resize all videos according to their own aspect ratio
   $allVideos.each(function() {
     var $el = $(this);
