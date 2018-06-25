@@ -15,16 +15,16 @@ $(window).on("scroll", function() {
     // show progress bar
   progressBar();
   // animation when scrolling
-    $(".first-left-img").addClass("animated fadeInLeft");
-    $(".first-right-img").addClass("animated fadeInRight");
-    $(".second-left-img").addClass("animated fadeInLeft");
-    $(".second-right-img").addClass("animated fadeInRight");
-    $("#space").addClass("animated fadeInLeft");
-    $("#discover-campus").addClass("animated fadeInRight");  
-    $(".event-hall").addClass("animated fadeInLeft");
-    $(".class-room").addClass("animated fadeInRight");
-    $(".office-room").addClass("animated fadeInLeft");
-    $(".meeting-room").addClass("animated fadeInRight");
+  $(".first-left-img").addClass("animated fadeInLeft");
+  $(".first-right-img").addClass("animated fadeInRight");
+  $(".second-left-img").addClass("animated fadeInLeft");
+  $(".second-right-img").addClass("animated fadeInRight");
+  $("#space").addClass("animated fadeInLeft");
+  $("#discover-campus").addClass("animated fadeInRight");  
+  $(".event-hall").addClass("animated fadeInLeft");
+  $(".class-room").addClass("animated fadeInRight");
+  $(".office-room").addClass("animated fadeInLeft");
+  $(".meeting-room").addClass("animated fadeInRight");
 });
 
 // Find all YouTube videos
