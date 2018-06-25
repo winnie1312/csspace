@@ -12,20 +12,19 @@ $(window).on("scroll", function() {
   }	else {
     $(".nav-book-button").removeClass("show")
   }
-    // show progress bar
+  
+  // show progress bar
   progressBar();
-  // animation when scrolling
-  $(".first-left-img").addClass("animated fadeInLeft");
-  $(".first-right-img").addClass("animated fadeInRight");
-  $(".second-left-img").addClass("animated fadeInLeft");
-  $(".second-right-img").addClass("animated fadeInRight");
-  $("#space").addClass("animated fadeInLeft");
-  $("#discover-campus").addClass("animated fadeInRight");  
-  $(".event-hall").addClass("animated fadeInLeft");
-  $(".class-room").addClass("animated fadeInRight");
-  $(".office-room").addClass("animated fadeInLeft");
-  $(".meeting-room").addClass("animated fadeInRight");
 });
+
+// ScrollReveal animation
+var sr = ScrollReveal({ opacity: 1, distance: '500px', mobile: false });
+sr.reveal('#space', { origin: 'left' });
+sr.reveal('#discover-campus', { origin: 'right' });
+sr.reveal('.event-hall', { origin: 'left' });
+sr.reveal('.class-room', { origin: 'right' });
+sr.reveal('.office-room', { origin: 'left' });
+sr.reveal('.meeting-room', { origin: 'right' });
 
 // Find all YouTube videos
 var $allVideos = $("iframe[src^='//www.youtube.com']");
